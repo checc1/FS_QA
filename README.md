@@ -1,5 +1,8 @@
 # FS_QA
-FS algorithm reformulated as a QUBO problem applied to feature maps extracted from a target layer of Computer vision model.
+
+## Towards interpretable AI with quantum annealing feature selection
+This is the code repository from the paper *Towards interpretable AI with quantum annealing feature selection* by Francesco Aldo Venturelli, Emanuele Costa, Sikha O K, Bruno Juliá-Díaz, Miguel A. González Ballester and Alba Cervera-Lierta, that is going to be updated in the next days.
+
 
 ## Abstract
 Deep learning models are used in critical applications where mistakes can have serious conse-
