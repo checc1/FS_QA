@@ -21,7 +21,8 @@ study the computational behavior of the quantum annealing algorithm. Specificall
 the minimum energy gap of the system during computation and the probability that the algorithm
 finds the correct solution. These analyses provide theoretical insight into why the method works
 effectively in practice.    
-![alt text](https://github.com/checc1/FS_QA/img/figureMainAnnealing-with-d-update.drawio-compressed.pdf?raw=true)
+
+![plot](./img/figureMainAnnealing-with-d-update.drawio-compressed.pdf)
 
 
 
