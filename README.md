@@ -40,12 +40,14 @@ src -----|
                                qutip_utils.py
 ```
 **finalSimulation.py** performs the annealing evolution using the matrix exponentiation and exact diagonalization (based on Lanczos method) from ```Scipy```of a single
-problem Hamiltonian that represents a single image tensor sampled from the set of correct predictions of the test dataset.  
-It stores respectively the bitstring containing the selected feature maps, the energy spectrum, the probabilities, the expectation value of the evolving quantum state,
-the otheer states of the spectrum and the fidelity in a dedicated folder. Recommend to change folder and global paths.
-**run.sh** executes the file *finalSimulation.py* and-or *simulation_dimension.py* in a loop running on the classes of the dataset.
-**sampling.py** performs the sampling of the ground state bitstring at the end of the annealing evolution.
-**simulation_dimension.py** performs the annealing evolution in the same way *finalSimulation.py* does, with the addition of storing the dimension of the problem Hamiltonian before the annealing evolution, i.e. the number of activated qubits that compose the problem.
+problem Hamiltonian that represents a single image tensor sampled from the set of correct predictions of the test dataset. It stores respectively the bitstring containing the selected feature maps, the energy spectrum, the probabilities, the expectation value of the evolving quantum state, the otheer states of the spectrum and the fidelity in a dedicated folder. Recommend to change folder and global paths.  
+**run.sh** executes the file *finalSimulation.py* and-or *simulation_dimension.py* in a loop running on the classes of the dataset.  
+**sampling.py** performs the sampling of the ground state bitstring at the end of the annealing evolution.  
+**simulation_dimension.py** performs the annealing evolution in the same way *finalSimulation.py* does, with the addition of storing the dimension of the problem Hamiltonian before the annealing evolution, i.e. the number of activated qubits that compose the problem.  
+**utils** is a utility folder that contains:  
+**feature_extraction_utils2.py** performs the *hook* method of *PyTorch* to extract the feature map from the target convolutional block and calculates the gradient with respect to the 
+map itself.  
+**loaders.py**
 
 ## Authors and contributors
 Francesco Aldo Venturelli, Emanuele Costa, Sikha O K, Bruno Julia Diaz, Miguel A. Gonzalez Ballester and Alba Cervera-Lierta.
