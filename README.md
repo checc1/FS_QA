@@ -26,7 +26,7 @@ effectively in practice.
 ## Main keypoints
 1) After training a CNN (*ResNet-18*), we extract *$N_f$* feature maps from the last convolutional block and we keep only those that positively contribute to the gradient as the following
 $\alpha_a = \frac{1}{H_fW_f}\sum_{ij}^{H_fW_f}\frac{\partial z}{\partial f_a^{(ij)}$
-$\{\mathbf{\tilde{f}}=\{\mathbf{f}^{(a)}|\alpha_a>0\}\}$
+$\{\tilde{\mathbf{f}}\} \equiv \{\mathbf{f}^{(a)}|\alpha_{a}>0\}$
 
 
 
