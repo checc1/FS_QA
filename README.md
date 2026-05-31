@@ -22,7 +22,7 @@ the minimum energy gap of the system during computation and the probability that
 finds the correct solution. These analyses provide theoretical insight into why the method works
 effectively in practice.    
 
-![plot](./img/figureMainAnnealing-with-d-update.drawio-compressed.pdf)
+![plot](./img/figureMainAnnealing-with-d-update.drawio-compressed.svg)
 
 
 
