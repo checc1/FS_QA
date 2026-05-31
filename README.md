@@ -24,19 +24,19 @@ effectively in practice.
 
 
 ## Structure
-> src --->
->         |
->         |---> finalSimulation.py
->               run.sh
->               sampling.py
->               simulation_dimension.py
->               utils --->
->                         |
->                         |---> feature_extraction_utils2.py
->                               loaders.py
->                               models.py
->                               qutip_class.py
->                               qutip_utils.py
+src --->
+         |
+         |---> finalSimulation.py
+               run.sh
+               sampling.py
+               simulation_dimension.py
+               utils --->
+                         |
+                         |---> feature_extraction_utils2.py
+                               loaders.py
+                               models.py
+                               qutip_class.py
+                               qutip_utils.py
 
 ## Authors and contributors
 Francesco Aldo Venturelli, Emanuele Costa, Sikha O K, Bruno Julia Diaz, Miguel A. Gonzalez Ballester and Alba Cervera-Lierta.
