@@ -22,6 +22,22 @@ the minimum energy gap of the system during computation and the probability that
 finds the correct solution. These analyses provide theoretical insight into why the method works
 effectively in practice.
 
+
+## Structure
+> src --->
+>         |
+>         |---> finalSimulation.py
+>               run.sh
+>               sampling.py
+>               simulation_dimension.py
+>               utils --->
+>                         |
+>                         |---> feature_extraction_utils2.py
+>                               loaders.py
+>                               models.py
+>                               qutip_class.py
+>                               qutip_utils.py
+
 ## Authors and contributors
 Francesco Aldo Venturelli, Emanuele Costa, Sikha O K, Bruno Julia Diaz, Miguel A. Gonzalez Ballester and Alba Cervera-Lierta.
 
