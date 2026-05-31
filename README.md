@@ -25,8 +25,8 @@ effectively in practice.
 ![plot](./img/figureMainAnnealing-with-d-update.drawio-compressed.svg)  
 ## Main keypoints
 1) After training a CNN (*ResNet-18*), we extract *$N_f$* feature maps from the last convolutional block and we keep only those that positively contribute to the gradient as the following
-$\alpha_a=\frac{1}{H_{f} W_{f}}\sum_{ij}^{H_{f}, W_{f}} \frac{\partial z}{\partial f^{(a)}_{ij}}$
-$\{\tilde{\mathbf{f}}\} \equiv \{\mathbf{f}^{(a)}|\alpha_{a}>0\}$
+$$\alpha_a=\frac{1}{H_{f} W_{f}}\sum_{ij}^{H_{f}, W_{f}} \frac{\partial z}{\partial f^{(a)}_{ij}}$$
+$$\{\tilde{\mathbf{f}}\} \equiv \{\mathbf{f}^{(a)}|\alpha_{a}>0\}$$
 
 
 
