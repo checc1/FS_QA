@@ -48,7 +48,9 @@ $$
 
 
 ## Results
-Plot of the energy gap distribution ($$\Delta_{min}$$) and fidelity scaling across distinct $$F_f = 16, 24, 32.$$
+Plot of the energy gap distribution ($$\Delta_{min}$$) and fidelity scaling across distinct $$F_f = 16, 24, 32.$$    
+
+
 <img src="img/DELTA_finalUpdated.svg" width="300" /> ![plot](./img/fidelity_scaling.svg) 
 
 Orthogonal matrix displaying the overlap between distinct image classes with $$\beta=0.7$$     
