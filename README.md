@@ -94,6 +94,11 @@ problem Hamiltonian that represents a single image tensor sampled from the set o
 map itself.  
 **loaders.py**
 
+## Aknowledgment
+E. C. acknowledges funding from the Spanish Ministry for Digital Transformation and the Civil Service of the Spanish Government through the QUANTUM ENIA project call - Quantum Spain, EU, through NextGenerationEU, within the framework of Digital Spain 2026. A.C.-L. acknowledges funding by the European Union, supported by the EuroHPC Joint Undertaking and its members under the Grant Agreement Nº 101159808, including top-up funding by Ministry for Digital Transformation and the Civil Service of the Spanish Government, and from the grant
+RYC2022-037769-I funded by MICIU/ AEI/ 10.13039/501100011033 and by “ESF+”. F.A.V. and M.A.G.B. acknowledge funding from the Maria de Maeztu Units of Excellence Programme CEX2021001195-M, funded by MICIU/AEI/10.13039/501100011033. B. J-D acknolwedges funding from PID2023-147475NB-I00 funded by MICIU/AEI/10.13039/501100011033 and FEDER, UE,
+by grants 2021SGR01095 from Generalitat de Catalunya, and by Project CEX2024-001451-M of ICCUB (Unidad de Excelencia Mar´ıa de Maeztu).
+
 ## Authors and contributors
 Francesco Aldo Venturelli, Emanuele Costa, Sikha O K, Bruno Julia Diaz, Miguel A. Gonzalez Ballester and Alba Cervera-Lierta.
 
