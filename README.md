@@ -32,15 +32,16 @@ $$
 \{\tilde{\mathbf{f}}\}\equiv\{\mathbf{f}^{(a)}\mid\alpha_a>0\}
 $$    
 
-2) We estimate the cosine similarity (how mutually orthogonal these vectors are)    
+2) Estimate the cosine similarity (how mutually orthogonal these vectors are)    
 
 $$J_{pq}=| \langle \tilde{\mathbf{f}}^{(p)}; \tilde{\mathbf{f}}^{(q)}\rangle |=\frac{|\sum_{ij} \tilde{f}_{ij}^{(p)} \tilde{f}_{ij}^{(q)}|}{||\tilde{\mathbf{f}}^{(p)}||\  ||\tilde{\mathbf{f}}^{(q)}||}$$    
 
-3) Compose the global time-dependent Hamiltonian (driver $$H_D$$ + problem $$H_P$$)
+3) Compose the global time-dependent Hamiltonian (driver $$H_D$$ + QUBO $$H_{QUBO}$$)
 
-$$\hat{H}(s) = A(s)\hat{H}_D + B(s)\hat{H}_P$$    
+$$\hat{H}(s)=A(s) \hat{H}_\text{D} + B(s) \hat{H}_{\mathrm{QUBO}}$$    
 
-where $$\hat{H}_D = -\sum_p^d \hat{\sigma}_x^{(p)}$$  and  $$\hat{H}_P = (1-\beta)\frac{1}{2}\sum_{pq}J_{pq}\hat{n}_p\hat{n}_q+\beta\sum_ph_p\hat{n}_p.$$
+where $$\hat{H}_{D}=-\sum_{p}^{d}\hat{\sigma}_{x}^{(p)}$$  and  $$\hat{H}_{\text{QUBO}} = (1-\beta) \frac{1}{2}\sum_{pq} J_{pq} \hat{n}_p\hat{n}_q + 
+    \beta\sum_p h_p \hat{n}_p.$$
 
 
 
