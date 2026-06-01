@@ -29,19 +29,32 @@ effectively in practice.
 $$\alpha_a=\frac{1}{H_fW_f}\sum_{ij}^{H_f,W_f}\frac{\partial z}{\partial f^{(a)}_{ij}}                            \\ \\ (1)$$    
 
 $$
-\{\tilde{\mathbf{f}}\}\equiv\{\mathbf{f}^{(a)}\mid\alpha_a>0\}
-$$    
+\{\tilde{\mathbf{f}}\}\equiv\{\mathbf{f}^{(a)}\mid\alpha_a>0\}                                                    \\ \\ (2)$$    
 
 2) Estimate the cosine similarity (how mutually orthogonal these vectors are)    
 
-$$J_{pq}=| \langle \tilde{\mathbf{f}}^{(p)}; \tilde{\mathbf{f}}^{(q)}\rangle |=\frac{|\sum_{ij} \tilde{f}_{ij}^{(p)} \tilde{f}_{ij}^{(q)}|}{||\tilde{\mathbf{f}}^{(p)}||\  ||\tilde{\mathbf{f}}^{(q)}||}$$    
+$$
+J_{pq}=| \langle \tilde{\mathbf{f}}^{(p)}; \tilde{\mathbf{f}}^{(q)}\rangle |=\frac{|\sum_{ij} \tilde{f}_{ij}^{(p)} \tilde{f}_{ij}^{(q)}|}{||\tilde{\mathbf{f}}^{(p)}||\  ||\tilde{\mathbf{f}}^{(q)}||}                                                                                     \\ \\ (3)$$    
 
 3) Compose the global time-dependent Hamiltonian (driver $$H_D$$ + QUBO $$H_{QUBO}$$)
 
-$$\hat{H}(s)=A(s) \hat{H}_\text{D} + B(s) \hat{H}_{\mathrm{QUBO}}$$    
+$$
+\hat{H}(s)=A(s)\hat{H}_D + B(s)\hat{H}_{\mathrm{QUBO}}
+$$
 
-where $$\hat{H}_{D}=-\sum_{p}^{d}\hat{\sigma}_{x}^{(p)}$$  and  $$\hat{H}_{\text{QUBO}} = (1-\beta) \frac{1}{2}\sum_{pq} J_{pq} \hat{n}_p\hat{n}_q + 
-    \beta\sum_p h_p \hat{n}_p.$$
+(4)
+where
+$$
+\hat{H}_D = -\sum_{p=1}^{d}\hat{\sigma}_x^{(p)}
+$$
+and
+$$
+\hat{H}_{\mathrm{QUBO}}
+=
+(1-\beta)\frac{1}{2}\sum_{p,q} J_{pq}\hat{n}_p\hat{n}_q
++
+\beta\sum_p h_p\hat{n}_p.
+$$
 
 
 
