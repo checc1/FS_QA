@@ -78,6 +78,11 @@ src -----|
                                models.py
                                qutip_class.py
                                qutip_utils.py
+               plot ------|
+                          |
+                          |---> Scaling.py
+                                deltaNewUpdated.py
+                                plot_fidelity_dim.py
 ```
 **finalSimulation.py** performs the annealing evolution using the matrix exponentiation and exact diagonalization (based on Lanczos method) from ```Scipy```of a single
 problem Hamiltonian that represents a single image tensor sampled from the set of correct predictions of the test dataset. It stores respectively the bitstring containing the selected feature maps, the energy spectrum, the probabilities, the expectation value of the evolving quantum state, the otheer states of the spectrum and the fidelity in a dedicated folder. Recommend to change folder and global paths.  
