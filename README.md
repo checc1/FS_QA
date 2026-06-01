@@ -52,7 +52,7 @@ Plot of the energy gap distribution ($$\Delta_{min}$$)
 ![plot](./img/DELTA_finalUpdated.svg)     
 
 Orthogonal matrix displaying the overlap between distinct image classes with $$\beta=0.7$$.
-<img src="https://github.com/checc1/FS_QA/img/OrtMtx_QA_beta0.7.png" width="100" />
+<img src="img/OrtMtx_QA_beta0.7.png" width="100" />
 
 
 
