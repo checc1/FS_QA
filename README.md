@@ -51,15 +51,16 @@ $$
 Plot of the energy gap distribution ($$\Delta_{min}$$) and fidelity scaling across distinct $$F_f = 16, 24, 32.$$    
 
 
-<img src="img/DELTA_finalUpdated.svg" width="300" /> ![plot](./img/fidelity_scaling.svg) 
+<img src="img/DELTA_finalUpdated.svg" width="400" /> ![plot](./img/fidelity_scaling.svg)    
 
-Orthogonal matrix displaying the overlap between distinct image classes with $$\beta=0.7$$     
+The l.h.s. plot shos the energy gap $$\Delta_{min}$$ distribution for $$N_f = 16$$, for $$\tau = 50$$ and $$\Delta s = 0.01$$ across all 200 samples of the test set. In purple,
+the cumulative distribution tells us about how likely we find values of the minimum gap.  In the r.h.s. Median F values as function of the filtered feature maps $$d$$ for distinct $$\tau$$ with different $$N_f = 16, 24, 32$$. For higher values of $$\tau$$, the fidelity shows a global constant trend, while for $$\tau = 10$$, in diabatic regime, we observe an exponentially decreasing trend, in accordance with the Landau-Zener formula.    
 
-<img src="img/OrtMtx_QA_beta0.7.png" width="400" />      
+<img src="img/OrtMtx_QA_beta0.7.png" width="400" />     
 
-
-
-
+Class–class correlation map for the feature selection algorithm for a ResNet-18 constrained to $$N_f = 16$$ feature maps in the final layer,
+with $$\beta = 0.7$$ and trained for 20 epochs. Warmer colors indicate stronger overlap between feature maps. The matrix is obtained by computing the scalar product between the distributions of the activated feature maps per image class, i.e. the Bhattacharya coefficient.
+For the quantum annealing simulation, we set $$\tau = 50$$ and $$n_{shots} = d^2$$, where $$d$$ is the number of feature maps that contribute positively to the output’s gradient. A full diagonal matrix indicates complete orthogonality among classes. 
 
 
 ## Structure
