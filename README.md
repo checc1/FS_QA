@@ -50,7 +50,7 @@ $$
 ## Results
 Plot of the energy gap distribution ($$\Delta_{min}$$)   
 
-![plot](./img/DELTA_finalUpdated.svg)     
+![plot](./img/DELTA_finalUpdated.svg)  ![plot](./img/fidelity_scaling.svg) 
 
 Orthogonal matrix displaying the overlap between distinct image classes with $$\beta=0.7$$     
 
