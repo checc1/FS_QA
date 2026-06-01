@@ -51,7 +51,7 @@ $$
 Plot of the energy gap distribution ($$\Delta_{min}$$) and fidelity scaling across distinct $$F_f = 16, 24, 32.$$    
 
 
-<img src="img/DELTA_finalUpdated.svg" width="400" /> ![plot](./img/fidelity_scaling.svg)    
+<img src="img/DELTA_finalUpdated.svg" width="300" /> ![plot](./img/fidelity_scaling.svg)    
 
 The l.h.s. plot shos the energy gap $$\Delta_{min}$$ distribution for $$N_f = 16$$, for $$\tau = 50$$ and $$\Delta s = 0.01$$ across all 200 samples of the test set. In purple,
 the cumulative distribution tells us about how likely we find values of the minimum gap.  In the r.h.s. Median F values as function of the filtered feature maps $$d$$ for distinct $$\tau$$ with different $$N_f = 16, 24, 32$$. For higher values of $$\tau$$, the fidelity shows a global constant trend, while for $$\tau = 10$$, in diabatic regime, we observe an exponentially decreasing trend, in accordance with the Landau-Zener formula.    
