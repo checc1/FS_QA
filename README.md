@@ -36,16 +36,15 @@ $$
 $$
 J_{pq}=| \langle \tilde{\mathbf{f}}^{(p)}; \tilde{\mathbf{f}}^{(q)}\rangle |=\frac{|\sum_{ij} \tilde{f}_{ij}^{(p)} \tilde{f}_{ij}^{(q)}|}{||\tilde{\mathbf{f}}^{(p)}||\  ||\tilde{\mathbf{f}}^{(q)}||}                                                                                     \\ \\ (3)$$    
 
-3) Compose the global time-dependent Hamiltonian (driver $$H_D$$ + QUBO $$H_{QUBO}$$)
-$$\hat{H}(s)=A(s)\hat{H}_D+B(s)\hat{H}_{\mathrm{QUBO}}                                                             \\ \\ (4)$$
+3) Compose the global time-dependent Hamiltonian (driver $$H_D$$ + QUBO $$H_{QUBO}$$) and evolve
+$$\hat{H}(s)= A(s)\hat{H}_{D}+B(s)\hat{H}_{\mathrm{QUBO}}                                                             \\ \\ (4)$$
 where
-$$
-\hat{H}_D=-\sum_{p=1}^{d}\hat{\sigma}_x^{(p)}
-$$
+$$\hat{H}_D=-\sum_{p=1}^{d}\hat{\sigma}_x^{(p)}$$
 and
 $$
-\hat{H}_{\mathrm{QUBO}}=(1-\beta)\frac{1}{2}\sum_{p,q}J_{pq}\hat{n}_p\hat{n}_q+\beta\sum_p h_p\hat{n}_p.
-$$
+\hat{H}_{\mathrm{QUBO}}=(1-\beta)\frac{1}{2}\sum_{p,q}J_{pq}\hat{n}_p\hat{n}_q+\beta\sum_p h_p\hat{n}_p.$$
+
+5) Sampling the bit-string to obtain the selected feature maps.
 
 
 
