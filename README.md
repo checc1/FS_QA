@@ -42,9 +42,13 @@ where
 $$\hat{H}_D=-\sum_{p=1}^{d}\hat{\sigma}_x^{(p)}$$
 and
 $$
-\hat{H}_{\mathrm{QUBO}}=(1-\beta)\frac{1}{2}\sum_{p,q}J_{pq}\hat{n}_p\hat{n}_q+\beta\sum_p h_p\hat{n}_p.$$
+\hat{H}_{\mathrm{QUBO}}=(1-\beta)\frac{1}{2}\sum_{p,q}J_{pq}\hat{n}_p\hat{n}_q+\beta\sum_p h_p\hat{n}_p$$
 
 5) Sampling the bit-string to obtain the selected feature maps.
+
+
+## Results
+Plot of the energy gap distribution ($$\Delta$$) 
 
 
 
