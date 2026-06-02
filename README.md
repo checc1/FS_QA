@@ -34,7 +34,7 @@ $$
 2) Estimate the cosine similarity (how mutually orthogonal these vectors are)    
 
 $$
-J_{pq}=| \langle \tilde{\mathbf{f}}^{(p)}; \tilde{\mathbf{f}}^{(q)}\rangle |=\frac{|\sum_{ij} \tilde{f}_{ij}^{(p)} \tilde{f}_{ij}^{(q)}|}{||\tilde{\mathbf{f}}^{(p)}||\  ||\tilde{\mathbf{f}}^{(q)}||}                                                                                     \\ \\ (3)$$    
+J_{pq}=|\langle \tilde{\mathbf{f}}^{(p)}; \tilde{\mathbf{f}}^{(q)}\rangle|=\frac{|\sum_{ij}\tilde{f}_{ij}^{(p)}\tilde{f}_{ij}^{(q)}|}{||\tilde{\mathbf{f}}^{(p)}||\  ||\tilde{\mathbf{f}}^{(q)}||}                                                                                     \\ \\ (3)$$    
 
 3) Compose the global time-dependent Hamiltonian (driver $$H_D$$ + QUBO $$H_{QUBO}$$) and evolve
 $$\hat{H}(s)= A(s)\hat{H}_{D}+B(s)\hat{H}_{\mathrm{QUBO}}                                                             \\ \\ (4)$$
@@ -83,6 +83,13 @@ src -----|
                           |---> Scaling.py
                                 deltaNewUpdated.py
                                 plot_fidelity_dim.py
+               quantitative_analysis ------|
+                                           |
+                                           |---> GradCam_GradCampp_SA_newversion.py
+                                                 avgDropSA.py
+                                                 om_sa.py
+                                                 ssim_on_region.py
+                                                 ssim_on_region_common_feature.py
 ```
 **finalSimulation.py** performs the annealing evolution using the matrix exponentiation and exact diagonalization (based on Lanczos method) from ```Scipy```of a single
 problem Hamiltonian that represents a single image tensor sampled from the set of correct predictions of the test dataset. It stores respectively the bitstring containing the selected feature maps, the energy spectrum, the probabilities, the expectation value of the evolving quantum state, the otheer states of the spectrum and the fidelity in a dedicated folder. Recommend to change folder and global paths.  
